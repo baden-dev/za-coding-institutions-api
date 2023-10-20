@@ -3,7 +3,6 @@ package com.baden.controller;
 import com.baden.customResponse.SuccessResponse;
 import com.baden.entity.InstitutionEntity;
 import com.baden.service.InstitutionService;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
