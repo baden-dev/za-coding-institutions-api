@@ -76,7 +76,7 @@ public class InstitutionService {
             throw new NoSuchElementException("Error deleting, no such institution present with ID = " + institution_id);
         }
         institutionRepository.deleteById(institution_id);
-        return new SuccessResponse(200, "Institution deleted successfully!");
+        return new SuccessResponse(200, "Successfully deleted Institution with ID = "+ institution_id);
     }
 
     public static void checkMissingCompulsoryFields(InstitutionEntity institutionEntity) {
