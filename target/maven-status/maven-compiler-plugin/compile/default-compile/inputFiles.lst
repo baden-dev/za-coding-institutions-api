@@ -1,0 +1,9 @@
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/entity/InstitutionEntity.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/controller/InstitutionController.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/repository/InstitutionRepository.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/Application.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/customResponse/exception/NullFieldException.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/customResponse/exception/ExceptionResponse.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/customResponse/SuccessResponse.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/service/InstitutionService.java
+/home/baden/Downloads/za-coding-institutions-api/src/main/java/com/baden/customResponse/exception/GlobalExceptionHandler.java

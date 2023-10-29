@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.baden.InstitutionRepositoryUnitTest" time="1.843" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/baden/Downloads/za-coding-institutions-api/target/test-classes:/home/baden/Downloads/za-coding-institutions-api/target/classes:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.1.4/spring-boot-starter-data-jpa-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.1.4/spring-boot-starter-aop-3.1.4.jar:/home/baden/.m2/repository/org/springframework/spring-aop/6.0.12/spring-aop-6.0.12.jar:/home/baden/.m2/repository/org/aspectj/aspectjweaver/1.9.20/aspectjweaver-1.9.20.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.1.4/spring-boot-starter-jdbc-3.1.4.jar:/home/baden/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/baden/.m2/repository/org/springframework/spring-jdbc/6.0.12/spring-jdbc-6.0.12.jar:/home/baden/.m2/repository/org/hibernate/orm/hibernate-core/6.2.9.Final/hibernate-core-6.2.9.Final.jar:/home/baden/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/baden/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/baden/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/baden/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/baden/.m2/repository/io/smallrye/jandex/3.0.5/jandex-3.0.5.jar:/home/baden/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/baden/.m2/repository/net/bytebuddy/byte-buddy/1.14.8/byte-buddy-1.14.8.jar:/home/baden/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.3/jaxb-runtime-4.0.3.jar:/home/baden/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.3/jaxb-core-4.0.3.jar:/home/baden/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/baden/.m2/repository/org/glassfish/jaxb/txw2/4.0.3/txw2-4.0.3.jar:/home/baden/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/baden/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/baden/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/baden/.m2/repository/org/springframework/data/spring-data-jpa/3.1.4/spring-data-jpa-3.1.4.jar:/home/baden/.m2/repository/org/springframework/data/spring-data-commons/3.1.4/spring-data-commons-3.1.4.jar:/home/baden/.m2/repository/org/springframework/spring-orm/6.0.12/spring-orm-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-context/6.0.12/spring-context-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-tx/6.0.12/spring-tx-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-beans/6.0.12/spring-beans-6.0.12.jar:/home/baden/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/baden/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/baden/.m2/repository/org/springframework/spring-aspects/6.0.12/spring-aspects-6.0.12.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.1.4/spring-boot-starter-web-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter/3.1.4/spring-boot-starter-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot/3.1.4/spring-boot-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.1.4/spring-boot-autoconfigure-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.1.4/spring-boot-starter-logging-3.1.4.jar:/home/baden/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/baden/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/baden/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/home/baden/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/baden/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/baden/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.1.4/spring-boot-starter-json-3.1.4.jar:/home/baden/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.1.4/spring-boot-starter-tomcat-3.1.4.jar:/home/baden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar:/home/baden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.13/tomcat-embed-el-10.1.13.jar:/home/baden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.13/tomcat-embed-websocket-10.1.13.jar:/home/baden/.m2/repository/org/springframework/spring-web/6.0.12/spring-web-6.0.12.jar:/home/baden/.m2/repository/io/micrometer/micrometer-observation/1.11.4/micrometer-observation-1.11.4.jar:/home/baden/.m2/repository/io/micrometer/micrometer-commons/1.11.4/micrometer-commons-1.11.4.jar:/home/baden/.m2/repository/org/springframework/spring-webmvc/6.0.12/spring-webmvc-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-expression/6.0.12/spring-expression-6.0.12.jar:/home/baden/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.1.4/spring-boot-starter-test-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-test/3.1.4/spring-boot-test-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.1.4/spring-boot-test-autoconfigure-3.1.4.jar:/home/baden/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/baden/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/baden/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/baden/.m2/repository/net/minidev/json-smart/2.4.11/json-smart-2.4.11.jar:/home/baden/.m2/repository/net/minidev/accessors-smart/2.4.11/accessors-smart-2.4.11.jar:/home/baden/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/baden/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/baden/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/home/baden/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/baden/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/home/baden/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/baden/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/home/baden/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/home/baden/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.8/byte-buddy-agent-1.14.8.jar:/home/baden/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/baden/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/home/baden/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/baden/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/baden/.m2/repository/org/springframework/spring-core/6.0.12/spring-core-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-jcl/6.0.12/spring-jcl-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-test/6.0.12/spring-test-6.0.12.jar:/home/baden/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/baden/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/baden/.m2/repository/com/opencsv/opencsv/5.8/opencsv-5.8.jar:/home/baden/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/baden/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/baden/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/baden/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/baden/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/baden/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/baden/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Africa/Johannesburg"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ZA"/>
+    <property name="sun.boot.library.path" value="/home/baden/.sdkman/candidates/java/17.0.7-amzn/lib"/>
+    <property name="sun.java.command" value="/home/baden/Downloads/za-coding-institutions-api/target/surefire/surefirebooter-20231029235959030_3.jar /home/baden/Downloads/za-coding-institutions-api/target/surefire 2023-10-29T23-59-58_985-jvmRun1 surefire-20231029235959030_1tmp surefire_0-20231029235959030_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/baden/Downloads/za-coding-institutions-api/target/test-classes:/home/baden/Downloads/za-coding-institutions-api/target/classes:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.1.4/spring-boot-starter-data-jpa-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.1.4/spring-boot-starter-aop-3.1.4.jar:/home/baden/.m2/repository/org/springframework/spring-aop/6.0.12/spring-aop-6.0.12.jar:/home/baden/.m2/repository/org/aspectj/aspectjweaver/1.9.20/aspectjweaver-1.9.20.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.1.4/spring-boot-starter-jdbc-3.1.4.jar:/home/baden/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/baden/.m2/repository/org/springframework/spring-jdbc/6.0.12/spring-jdbc-6.0.12.jar:/home/baden/.m2/repository/org/hibernate/orm/hibernate-core/6.2.9.Final/hibernate-core-6.2.9.Final.jar:/home/baden/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/baden/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/baden/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/baden/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/baden/.m2/repository/io/smallrye/jandex/3.0.5/jandex-3.0.5.jar:/home/baden/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/baden/.m2/repository/net/bytebuddy/byte-buddy/1.14.8/byte-buddy-1.14.8.jar:/home/baden/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.3/jaxb-runtime-4.0.3.jar:/home/baden/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.3/jaxb-core-4.0.3.jar:/home/baden/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/baden/.m2/repository/org/glassfish/jaxb/txw2/4.0.3/txw2-4.0.3.jar:/home/baden/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/baden/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/baden/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/baden/.m2/repository/org/springframework/data/spring-data-jpa/3.1.4/spring-data-jpa-3.1.4.jar:/home/baden/.m2/repository/org/springframework/data/spring-data-commons/3.1.4/spring-data-commons-3.1.4.jar:/home/baden/.m2/repository/org/springframework/spring-orm/6.0.12/spring-orm-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-context/6.0.12/spring-context-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-tx/6.0.12/spring-tx-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-beans/6.0.12/spring-beans-6.0.12.jar:/home/baden/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/baden/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/baden/.m2/repository/org/springframework/spring-aspects/6.0.12/spring-aspects-6.0.12.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.1.4/spring-boot-starter-web-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter/3.1.4/spring-boot-starter-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot/3.1.4/spring-boot-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.1.4/spring-boot-autoconfigure-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.1.4/spring-boot-starter-logging-3.1.4.jar:/home/baden/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/baden/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/baden/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/home/baden/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/baden/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/baden/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.1.4/spring-boot-starter-json-3.1.4.jar:/home/baden/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar:/home/baden/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.1.4/spring-boot-starter-tomcat-3.1.4.jar:/home/baden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar:/home/baden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.13/tomcat-embed-el-10.1.13.jar:/home/baden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.13/tomcat-embed-websocket-10.1.13.jar:/home/baden/.m2/repository/org/springframework/spring-web/6.0.12/spring-web-6.0.12.jar:/home/baden/.m2/repository/io/micrometer/micrometer-observation/1.11.4/micrometer-observation-1.11.4.jar:/home/baden/.m2/repository/io/micrometer/micrometer-commons/1.11.4/micrometer-commons-1.11.4.jar:/home/baden/.m2/repository/org/springframework/spring-webmvc/6.0.12/spring-webmvc-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-expression/6.0.12/spring-expression-6.0.12.jar:/home/baden/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.1.4/spring-boot-starter-test-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-test/3.1.4/spring-boot-test-3.1.4.jar:/home/baden/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.1.4/spring-boot-test-autoconfigure-3.1.4.jar:/home/baden/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/baden/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/baden/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/baden/.m2/repository/net/minidev/json-smart/2.4.11/json-smart-2.4.11.jar:/home/baden/.m2/repository/net/minidev/accessors-smart/2.4.11/accessors-smart-2.4.11.jar:/home/baden/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/baden/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/baden/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/home/baden/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/baden/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/home/baden/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/home/baden/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/baden/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/home/baden/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/home/baden/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.8/byte-buddy-agent-1.14.8.jar:/home/baden/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/baden/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/home/baden/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/baden/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/baden/.m2/repository/org/springframework/spring-core/6.0.12/spring-core-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-jcl/6.0.12/spring-jcl-6.0.12.jar:/home/baden/.m2/repository/org/springframework/spring-test/6.0.12/spring-test-6.0.12.jar:/home/baden/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/baden/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/baden/.m2/repository/com/opencsv/opencsv/5.8/opencsv-5.8.jar:/home/baden/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/baden/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/baden/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/baden/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/baden/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/baden/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/baden/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/baden"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/home/baden/.sdkman/candidates/java/17.0.7-amzn"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/baden/Downloads/za-coding-institutions-api"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/baden/Downloads/za-coding-institutions-api/target/surefire/surefirebooter-20231029235959030_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.7+7-LTS"/>
+    <property name="user.name" value="baden"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.2.0-35-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.7.7.1"/>
+    <property name="localRepository" value="/home/baden/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="/home/baden/Downloads/za-coding-institutions-api"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="11757"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.7+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="saveInstitution" classname="com.baden.InstitutionRepositoryUnitTest" time="0.119">
+    <system-out><![CDATA[2023-10-30T00:00:01.737+02:00  INFO 11757 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.baden.InstitutionRepositoryUnitTest]: InstitutionRepositoryUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-30T00:00:01.744+02:00  INFO 11757 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.baden.Application for test class com.baden.InstitutionRepositoryUnitTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-30T00:00:01.762+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Starting InstitutionRepositoryUnitTest using Java 17.0.7 with PID 11757 (started by baden in /home/baden/Downloads/za-coding-institutions-api)
+2023-10-30T00:00:01.762+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : The following 1 profile is active: "default"
+2023-10-30T00:00:01.889+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T00:00:01.912+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2023-10-30T00:00:01.943+02:00  INFO 11757 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-10-30T00:00:01.969+02:00  INFO 11757 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:30e28536-9cad-438d-808d-ff4b8f025971;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-10-30T00:00:02.131+02:00  INFO 11757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T00:00:02.156+02:00  INFO 11757 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-30T00:00:02.157+02:00  INFO 11757 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-30T00:00:02.228+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:02.233+02:00  INFO 11757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T00:00:02.350+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:02.582+02:00  INFO 11757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists institution cascade 
+Hibernate: create table institution (institution_id integer generated by default as identity, institution_description TEXT, institution_email VARCHAR(50) not null, institution_name VARCHAR(50) not null, institution_phone VARCHAR(20), institution_website VARCHAR(50) not null, primary key (institution_id))
+2023-10-30T00:00:02.624+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T00:00:02.768+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Started InstitutionRepositoryUnitTest in 1.021 seconds (process running for 3.707)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+2023-10-30T00:00:02.881+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="updateInstitutionId" classname="com.baden.InstitutionRepositoryUnitTest" time="0.017">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-30T00:00:02.902+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Starting InstitutionRepositoryUnitTest using Java 17.0.7 with PID 11757 (started by baden in /home/baden/Downloads/za-coding-institutions-api)
+2023-10-30T00:00:02.902+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : The following 1 profile is active: "default"
+2023-10-30T00:00:02.936+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T00:00:02.941+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-10-30T00:00:02.945+02:00  INFO 11757 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-10-30T00:00:02.950+02:00  INFO 11757 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:be3cc6e1-8424-410a-b905-aca5df17bc91;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-10-30T00:00:02.960+02:00  INFO 11757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T00:00:02.963+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:02.963+02:00  INFO 11757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T00:00:02.967+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:02.977+02:00  INFO 11757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists institution cascade 
+Hibernate: create table institution (institution_id integer generated by default as identity, institution_description TEXT, institution_email VARCHAR(50) not null, institution_name VARCHAR(50) not null, institution_phone VARCHAR(20), institution_website VARCHAR(50) not null, primary key (institution_id))
+2023-10-30T00:00:02.979+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T00:00:03.010+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Started InstitutionRepositoryUnitTest in 0.119 seconds (process running for 3.949)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: update institution set institution_description=?,institution_email=?,institution_name=?,institution_phone=?,institution_website=? where institution_id=?
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+2023-10-30T00:00:03.028+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="getInvalidInstitutionId" classname="com.baden.InstitutionRepositoryUnitTest" time="0.015">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-30T00:00:03.042+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Starting InstitutionRepositoryUnitTest using Java 17.0.7 with PID 11757 (started by baden in /home/baden/Downloads/za-coding-institutions-api)
+2023-10-30T00:00:03.042+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : The following 1 profile is active: "default"
+2023-10-30T00:00:03.073+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T00:00:03.077+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-10-30T00:00:03.081+02:00  INFO 11757 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-10-30T00:00:03.093+02:00  INFO 11757 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a44e4576-4d25-471e-8992-f48352565fe6;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-10-30T00:00:03.103+02:00  INFO 11757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T00:00:03.106+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.106+02:00  INFO 11757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T00:00:03.109+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.120+02:00  INFO 11757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists institution cascade 
+Hibernate: create table institution (institution_id integer generated by default as identity, institution_description TEXT, institution_email VARCHAR(50) not null, institution_name VARCHAR(50) not null, institution_phone VARCHAR(20), institution_website VARCHAR(50) not null, primary key (institution_id))
+2023-10-30T00:00:03.122+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T00:00:03.151+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Started InstitutionRepositoryUnitTest in 0.12 seconds (process running for 4.09)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0 where i1_0.institution_id=?
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+2023-10-30T00:00:03.167+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInstitution" classname="com.baden.InstitutionRepositoryUnitTest" time="0.018">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-30T00:00:03.189+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Starting InstitutionRepositoryUnitTest using Java 17.0.7 with PID 11757 (started by baden in /home/baden/Downloads/za-coding-institutions-api)
+2023-10-30T00:00:03.189+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : The following 1 profile is active: "default"
+2023-10-30T00:00:03.240+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T00:00:03.244+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-10-30T00:00:03.248+02:00  INFO 11757 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-10-30T00:00:03.252+02:00  INFO 11757 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:9588977d-7cd4-418d-9665-91cc35ea0f1d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-10-30T00:00:03.262+02:00  INFO 11757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T00:00:03.265+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.265+02:00  INFO 11757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T00:00:03.269+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.278+02:00  INFO 11757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists institution cascade 
+Hibernate: create table institution (institution_id integer generated by default as identity, institution_description TEXT, institution_email VARCHAR(50) not null, institution_name VARCHAR(50) not null, institution_phone VARCHAR(20), institution_website VARCHAR(50) not null, primary key (institution_id))
+2023-10-30T00:00:03.280+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T00:00:03.318+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Started InstitutionRepositoryUnitTest in 0.148 seconds (process running for 4.257)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: delete from institution where institution_id=?
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+2023-10-30T00:00:03.337+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="getAllInstitutions" classname="com.baden.InstitutionRepositoryUnitTest" time="0.012">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-30T00:00:03.353+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Starting InstitutionRepositoryUnitTest using Java 17.0.7 with PID 11757 (started by baden in /home/baden/Downloads/za-coding-institutions-api)
+2023-10-30T00:00:03.353+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : The following 1 profile is active: "default"
+2023-10-30T00:00:03.384+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T00:00:03.388+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-10-30T00:00:03.392+02:00  INFO 11757 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-10-30T00:00:03.397+02:00  INFO 11757 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:edcb9d24-3179-4cc5-a68e-837a062b3b85;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-10-30T00:00:03.405+02:00  INFO 11757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T00:00:03.407+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.408+02:00  INFO 11757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T00:00:03.411+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.420+02:00  INFO 11757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists institution cascade 
+Hibernate: create table institution (institution_id integer generated by default as identity, institution_description TEXT, institution_email VARCHAR(50) not null, institution_name VARCHAR(50) not null, institution_phone VARCHAR(20), institution_website VARCHAR(50) not null, primary key (institution_id))
+2023-10-30T00:00:03.422+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T00:00:03.449+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Started InstitutionRepositoryUnitTest in 0.109 seconds (process running for 4.388)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+2023-10-30T00:00:03.461+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="getInstitutionById" classname="com.baden.InstitutionRepositoryUnitTest" time="0.007">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-30T00:00:03.472+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Starting InstitutionRepositoryUnitTest using Java 17.0.7 with PID 11757 (started by baden in /home/baden/Downloads/za-coding-institutions-api)
+2023-10-30T00:00:03.473+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : The following 1 profile is active: "default"
+2023-10-30T00:00:03.500+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T00:00:03.504+02:00  INFO 11757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-10-30T00:00:03.508+02:00  INFO 11757 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-10-30T00:00:03.512+02:00  INFO 11757 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:942d471f-8b37-47ad-9181-d41702838bdc;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-10-30T00:00:03.526+02:00  INFO 11757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T00:00:03.528+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.528+02:00  INFO 11757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T00:00:03.532+02:00  INFO 11757 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-30T00:00:03.541+02:00  INFO 11757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists institution cascade 
+Hibernate: create table institution (institution_id integer generated by default as identity, institution_description TEXT, institution_email VARCHAR(50) not null, institution_name VARCHAR(50) not null, institution_phone VARCHAR(20), institution_website VARCHAR(50) not null, primary key (institution_id))
+2023-10-30T00:00:03.543+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T00:00:03.567+02:00  INFO 11757 --- [           main] c.baden.InstitutionRepositoryUnitTest    : Started InstitutionRepositoryUnitTest in 0.103 seconds (process running for 4.506)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: insert into institution (institution_description,institution_email,institution_name,institution_phone,institution_website,institution_id) values (?,?,?,?,?,default)
+Hibernate: select i1_0.institution_id,i1_0.institution_description,i1_0.institution_email,i1_0.institution_name,i1_0.institution_phone,i1_0.institution_website from institution i1_0
+2023-10-30T00:00:03.575+02:00  INFO 11757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+</testsuite>
