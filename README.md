@@ -116,7 +116,7 @@ data and information about different institutions.
 2 - **Front-End Development with React**: I will be creating a front-end interface using React to enhance the user
 experience.
 This will allow users to interact with the API directly in their web browsers, providing a more accessible and
-user-friendly way to access and consume information, without the need for specialised API tools.
+user-friendly way to access and consume information, without the need for API tools.
 
 3 - **End-to-End Testing**: Following the completion of the front-end development, I will introduce end-to-end testing
 to ensure the application's functionality and performance from a user's perspective.
