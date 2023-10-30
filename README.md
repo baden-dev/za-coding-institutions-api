@@ -65,7 +65,7 @@ above-mentioned [technologies](#technologies-used).
       ```
 
       To exit a running Docker container in your terminal, you can use the following steps:
-      - Press Ctrl + C in the terminal where the container is running.
+      - Press **Ctrl + C** in the terminal where the container is running.
    
      - Alternatively, if you started the container in the background (detached mode), you can use the following command to
        stop and remove the container:
