@@ -7,10 +7,10 @@ Spring Data JPA to streamline database access, and MySQL is employed for data st
 
 <h2>Content:</h2>
 
-1. **[Technologies](#technologies-used)**: List of the technologies and tools used in the project.
+1. **[Technologies Used](#technologies-used)**: List of the technologies and tools used in the project.
 2. **[Prerequisites](#prerequisites)**: Outlines what you need to have installed to run the project and provides links
    to official installation guides.
-3. **[How to Install and Run the Project](#run-and-install)**: Offers steps to clone the repository and set up Docker
+3. **[How to Install and Run the Project](#how-to-install-and-run-the-project)**: Offers steps to clone the repository and set up Docker
    containers for running the project.
 4. **[API Endpoints](#api-endpoints)**: Describes the available API endpoints, along with a link to the API
    documentation.
@@ -43,7 +43,7 @@ However, if you wish to build upon and modify the project, you will need all the
 above-mentioned [technologies](#technologies-used).
 
 ***
-<h2 id="run-and-install">How to Install and Run the Project</h2>
+<h2 id="how-to-install-and-run-the-project">How to Install and Run the Project</h2>
 
 1. Clone the repo
    ```sh
