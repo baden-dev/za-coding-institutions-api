@@ -78,7 +78,7 @@ above-mentioned [technologies](#technologies-used).
 ***
 <h2 id="api-endpoints">API Endpoints</h2>
 For access to the API documentation, please visit
-the [ZA Coding Institutions API documentation](https://documenter.getpostman.com/view/22824490/2s9YRGyUqW) to find
+the <a href="https://documenter.getpostman.com/view/22824490/2s9YRGyUqW">ZA Coding Institutions API documentation </a>to find
 comprehensive information on available endpoints, request examples, and response formats.
 
 - Base URL: [http://localhost:8080/api/v1](http://localhost:8080/api/v1)
