@@ -10,7 +10,8 @@ Spring Data JPA to streamline database access, and MySQL is employed for data st
 1. **[Technologies Used](#technologies-used)**: List of the technologies and tools used in the project.
 2. **[Prerequisites](#prerequisites)**: Outlines what you need to have installed to run the project and provides links
    to official installation guides.
-3. **[How to Install and Run the Project](#how-to-install-and-run-the-project)**: Offers steps to clone the repository and set up Docker
+3. **[How to Install and Run the Project](#how-to-install-and-run-the-project)**: Offers steps to clone the repository
+   and set up Docker
    containers for running the project.
 4. **[API Endpoints](#api-endpoints)**: Describes the available API endpoints, along with a link to the API
    documentation.
@@ -53,43 +54,45 @@ above-mentioned [technologies](#technologies-used).
 2. Navigate to the root directory of the project
 3. Set Up Docker Containers
 
-    Choose one of the following methods to start the Docker containers based on your preference:
+   Choose one of the following methods to start the Docker containers based on your preference:
 
-   - To start the services in the foreground (and see their logs in your terminal), use:
-      ```sh
-      docker compose up
-      ```
-   - To start the services in detached mode (in the background, without terminal logs), use:
-      ```sh
-      docker compose up -d
-      ```
+    - To start the services in the foreground (and see their logs in your terminal), use:
+       ```sh
+       docker compose up
+       ```
+    - To start the services in detached mode (in the background, without terminal logs), use:
+       ```sh
+       docker compose up -d
+       ```
 
       To exit a running Docker container in your terminal, you can use the following steps:
-      - Press **Ctrl + C** in the terminal where the container is running.
-   
-     - Alternatively, if you started the container in the background (detached mode), you can use the following command to
-       stop and remove the container:
-       ```sh
-       docker compose down
-       ```
+        - Press **Ctrl + C** in the terminal where the container is running.
+
+        - Alternatively, if you started the container in the background (detached mode), you can use the following
+          command to
+          stop and remove the container:
+          ```sh
+          docker compose down
+          ```
 4. Once set up is completed, you can interact with the API endpoints using your preferred API testing tools, such as
    Postman, curl, or any other HTTP client of your choice.
 
 ***
 <h2 id="api-endpoints">API Endpoints</h2>
 For access to the API documentation, please visit
-the <a href="https://documenter.getpostman.com/view/22824490/2s9YRGyUqW">ZA Coding Institutions API documentation </a>to find
+the <a href="https://documenter.getpostman.com/view/22824490/2s9YRGyUqW">ZA Coding Institutions API documentation </a>to
+find
 comprehensive information on available endpoints, request examples, and response formats.
 
 - Base URL: [http://localhost:8080/api/v1](http://localhost:8080/api/v1)
 
-| HTTP Method | Endpoint                       | Description                          |
-|-------------|--------------------------------|--------------------------------------|
-| GET         | /institutions                  | Retrieve all Institutions            |
-| GET         | /institutions/{institution_id} | Retrieve Institution by ID           |
-| POST        | /institutions                  | Create a Institution                 |
-| PUT         | /institution/{institution_id}  | Update an existing Institution by ID |
-| DELETE      | /institution/{institution_id}  | Delete an existing Institution by ID |
+| HTTP Method | Endpoint                      | Description                          |
+|-------------|-------------------------------|--------------------------------------|
+| GET         | /institutions                 | Retrieve all Institutions            |
+| GET         | /institution/{institution_id} | Retrieve Institution by ID           |
+| POST        | /institutions                 | Create a Institution                 |
+| PUT         | /institution/{institution_id} | Update an existing Institution by ID |
+| DELETE      | /institution/{institution_id} | Delete an existing Institution by ID |
 
 ***
 <h2 id="testing">Testing</h2>
