@@ -109,6 +109,7 @@ To run all the test run:
 
 ***
 <h2 id="planned-features">Planned Features</h2>
+
 1 - **Expand Institution Database**: I plan to expand the institution database by doing more research and adding more
 data and information about different institutions.
 
