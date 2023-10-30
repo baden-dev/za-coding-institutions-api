@@ -52,9 +52,26 @@ above-mentioned [technologies](#technologies-used).
 
 2. Navigate to the root directory of the project
 3. Set Up Docker Containers
-   ```sh
-   docker compose up
-   ```
+
+    Choose one of the following methods to start the Docker containers based on your preference:
+
+   - To start the services in the foreground (and see their logs in your terminal), use:
+      ```sh
+      docker compose up
+      ```
+   - To start the services in detached mode (in the background, without terminal logs), use:
+      ```sh
+      docker compose up -d
+      ```
+
+      To exit a running Docker container in your terminal, you can use the following steps:
+      - Press Ctrl + C in the terminal where the container is running.
+   
+     - Alternatively, if you started the container in the background (detached mode), you can use the following command to
+       stop and remove the container:
+       ```sh
+       docker compose down
+       ```
 4. Once set up is completed, you can interact with the API endpoints using your preferred API testing tools, such as
    Postman, curl, or any other HTTP client of your choice.
 
