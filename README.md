@@ -3,7 +3,7 @@
 ***
 
 The ZA Coding Institutions API project uses Spring Boot to simplify development with its built-in features,
-Spring Data JPA to streamline database access, and MySQL is employed for data storage and
+Spring Data JPA to streamline database access, and MySQL is employed for data storage.
 
 <h2>Content:</h2>
 
